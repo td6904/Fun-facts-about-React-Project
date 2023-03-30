@@ -4,8 +4,9 @@ body {
     font-family: Inter, sans-serif;
     background-image: url(./react-logo.png);
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-x: right;
+    background-size: contain;
+    background-position-x: calc(50vh + 80%);
+    background-position-y: 100px;
 }
 
 .nav-bar {
