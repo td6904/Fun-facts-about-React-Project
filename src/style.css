@@ -2,6 +2,10 @@ body {
     background-color: rgb(95, 95, 95);
     margin: 0;
     font-family: Inter, sans-serif;
+    background-image: url(./react-logo.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-x: right;
 }
 
 .nav-bar {
