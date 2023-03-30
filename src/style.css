@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(95, 95, 95);
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    padding: 20px;
+    color: #61DAFB;
+    align-items: center;
+}
+
+.sub-title {
+    position: absolute;
+    right: 40px;
+    color: white;
+
+}
+
+.full-text {
+    color: white;
+    margin: 35px;
+}
+
+.list {
+    line-height: 40px;
+    font-size: 15pt;
+}
+
+.list li::marker {
+    color: #61DAFB;
+    font-size: 30px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 30px;
+}
+
+.main-title {
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 20pt;
+}
+
+.text-head {
+    font-size: 35pt;
+    font-weight: bold;
+}
