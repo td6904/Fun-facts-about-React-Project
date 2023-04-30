@@ -1,16 +1,11 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background-image: url(./react-logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: calc(50vh + 80%);
-    background-position-y: 100px;
 }
 
 nav {
     display: flex;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(138, 138, 138);
     padding: 20px;
     color: #61DAFB;
     align-items: center;
@@ -24,8 +19,19 @@ nav {
 
 main {
     color: black;
-    background-color: white;
-    margin: 35px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./react-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(65vh + 80%);
+    background-position-y: 15px;
+}
+
+.content {
+    margin-left: 50px;
+    position: relative;
+    top: 60px;
 }
 
 .list {
@@ -54,13 +60,51 @@ main {
 .text-head {
     font-size: 35pt;
     font-weight: bold;
+    margin: 0;
+}
+
+.toggler {
+    display: flex;
+    gap: 10px;
 }
 
 .toggler-slider {
-    height: 25px;
-    width: 47px;
-    background-color: blue;
+        position: relative;
+        top: 10px;
+        width: 75px;
+        height: 30px;
+        background-color: #333;
+        border-radius: 30px;
+        cursor: pointer;
+      
 }
+
+.toggler-light {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+  }
+
+.toggler-slider-circle {
+    width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: absolute;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.toggler input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggler input[type="checkbox"]:checked +  .toggler-slider-circle {
+    left: 44px;
+  }
 
 /* Dark mode */
 .dark {
@@ -76,9 +120,8 @@ main {
 
 }
 
-.dark main {
+.dark body {
     background-color: rgb(95, 95, 95);
-
 }
 
 .dark nav {
@@ -91,5 +134,9 @@ main {
 
 .dark li {
     color: white;
+}
+
+.dark .toggler-slider {
+    background-color: rgb(138, 138, 138);
 }
 
