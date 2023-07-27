@@ -3,12 +3,22 @@ body {
     font-family: Inter, sans-serif;
 }
 
-nav {
+.responsive {
     display: flex;
     background-color: rgb(138, 138, 138);
     padding: 20px;
     color: #61DAFB;
     align-items: center;
+}
+
+.responsive-element-full-logo {
+    display: flex;
+    align-items: center;
+}
+
+.responsive-element {
+    align-items: center;
+    display: flex;
 }
 
 .toggler {
@@ -19,13 +29,14 @@ nav {
 
 main {
     color: black;
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     background-image: url(./react-logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: calc(65vh + 80%);
     background-position-y: 15px;
+    
 }
 
 .content {
@@ -37,6 +48,7 @@ main {
 .list {
     line-height: 40px;
     font-size: 15pt;
+    margin-right: 40px;
 }
 
 .list li::marker {
@@ -124,7 +136,7 @@ main {
     background-color: rgb(95, 95, 95);
 }
 
-.dark nav {
+.dark .responsive {
     background-color: rgb(56, 56, 56);
 }
 
@@ -140,3 +152,16 @@ main {
     background-color: rgb(138, 138, 138);
 }
 
+@media screen and (max-width: 450px) {
+    .responsive {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .responsive-element {
+        justify-content: center;
+        display: flex;
+        padding-bottom: 15px;
+    }
+}
