@@ -36,6 +36,7 @@ main {
     background-size: contain;
     background-position-x: calc(65vh + 80%);
     background-position-y: 15px;
+    padding-bottom: 30px;
     
 }
 
