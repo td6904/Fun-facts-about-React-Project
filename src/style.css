@@ -29,15 +29,13 @@ body {
 
 main {
     color: black;
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     background-image: url(./react-logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: calc(65vh + 80%);
     background-position-y: 15px;
-    padding-bottom: 30px;
-    
 }
 
 .content {
@@ -50,6 +48,7 @@ main {
     line-height: 40px;
     font-size: 15pt;
     margin-right: 40px;
+    padding-bottom: 40px;
 }
 
 .list li::marker {
